@@ -3,7 +3,7 @@
 
 - [x] **手写一个哈希表**
 
-[v1版本](./hashtable/hash.h)，[v2版本](./hashtable/hash_v2.h)
+[v1版本](./hashtable/hash)，[v2版本](./hashtable/hash_v2.h)
 
 更多，期待~~~
 
