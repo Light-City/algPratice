@@ -5,6 +5,8 @@
 
 [v1版本](./hashtable/hash.h)，[v2版本](./hashtable/hash_v2.h)
 
+- [x] **Trie树实现**
+
 更多，期待~~~
 
 
