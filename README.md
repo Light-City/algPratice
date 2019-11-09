@@ -152,7 +152,9 @@
 
 ## 关于作者
 
-个人公众号：
+个人公众号：【guangcity】
+
+
 
 ![wechat](./img/wechat.jpg)
 
