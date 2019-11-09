@@ -4,7 +4,7 @@
 
 课程链接：https://coding.imooc.com/class/207.html
 
-后面将波波老师的其他课程学习笔记。
+后面将更新波波老师的其他课程学习笔记。
 
 ## 1.玩转数据结构 从入门到进阶C++版
 
@@ -154,7 +154,7 @@
 
 个人公众号：
 
-![](/home/light/c++/algPratice/img/wechat.jpg)
+![wechat](./img/wechat.jpg)
 
 个人博客：http://light-city.club/
 
