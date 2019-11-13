@@ -6,6 +6,18 @@
 
 后面将更新波波老师的其他课程学习笔记。
 
+## 0.开发环境
+
+开发环境Ubuntu18.04+Clion
+
+如何运行你的程序?
+
+添加cpp文件到CmakeLists.txt中，示例：
+
+```
+add_executable(LinkedList 玩转儿数据结构/linklist/LinkedList.cpp)
+```
+
 ## 1.玩转数据结构 从入门到进阶C++版
 
 - 动态数组

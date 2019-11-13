@@ -4,6 +4,7 @@
 
 #ifndef ALG_LINKEDLISTMAP_H
 #define ALG_LINKEDLISTMAP_H
+
 template<typename Key, typename Value>
 class LinkedListMap : public Map<Key, Value> {
 private:
@@ -34,6 +35,14 @@ public:
         dummyHead = new Node();
     }
 
+    ~LinkedListMap() {
+        Node *cur = dummyHead;
+        while (cur) {
+            delete cur;
+            cur = cur->next;
+            count--;
+        }
+    }
 
     virtual int size() {
         return count;

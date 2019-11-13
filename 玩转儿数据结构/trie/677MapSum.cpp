@@ -19,6 +19,18 @@ public:
         root = new Node();
     }
 
+    ~MapSum() {
+        destroy(root);
+    }
+
+    void destroy(Node *node) {
+        if (node) {
+            for (auto each:node->next)
+                delete each.second;
+            delete node;
+        }
+    }
+
     void insert(string key, int val) {
         Node *cur = root;
         for (int i = 0; i < key.size(); i++) {
@@ -29,6 +41,7 @@ public:
         }
         cur->value = val;
     }
+
     /**
      * 先查找到prefix最后一个char的位置，再从这个char开始递归求和。
      * @param prefix

@@ -12,7 +12,7 @@
 
 // 基于动态数组的Stack
 template<typename T>
-class ArrayStack: public CommonStack<T> {
+class ArrayStack : public CommonStack<T> {
 private:
     Array<T> *array;
 public:
@@ -22,6 +22,10 @@ public:
 
     ArrayStack() {
         array = new Array<T>();
+    }
+
+    ~ArrayStack() {
+        delete[]array;
     }
 
     int getSize() {

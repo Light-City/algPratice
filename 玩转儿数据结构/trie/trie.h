@@ -25,7 +25,17 @@ public:
         root = new Node();
         size = 0;
     }
-
+    
+    ~Trie() {
+        destroy(root);
+    }
+    void destroy(Node *node) {
+        if (node) {
+            for(auto each:node->next) 
+                delete each.second;
+            delete node;
+        }
+    }
     // 获取 Trie中存储的单词数量
     int getSize() {
         return size;

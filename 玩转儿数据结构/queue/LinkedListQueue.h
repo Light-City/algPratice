@@ -35,6 +35,15 @@ public:
 
     }
 
+    ~LinkedListQueue() {
+        Node *cur = head;
+        while (head) {
+            cur = cur->next;
+            delete cur;
+            size--;
+        }
+    }
+
     bool isEmpty() {
         return size == 0;
     }

@@ -22,7 +22,9 @@ public:
     ArrayQueue() {
         array = new Array<T>();
     }
-
+    ~ArrayQueue() {
+        delete []array;
+    }
     int getSize() {
         return array->getSize();
     }

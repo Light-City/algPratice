@@ -20,6 +20,18 @@ public:
         root = new Node();
     }
 
+    ~WordDictionary() {
+        destroy(root);
+    }
+
+    void destroy(Node *node) {
+        if (node) {
+            for (auto each:node->next)
+                delete each.second;
+            delete node;
+        }
+    }
+
     /** Adds a word into the data structure. */
     void addWord(string word) {
         Node *cur = root;

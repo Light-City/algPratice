@@ -16,6 +16,11 @@ public:
         linkedList = new LinkedList<Key>;
     }
 
+    ~LinkedListSet() {
+        if (linkedList)
+            delete linkedList;
+    }
+
     // O(n)
     virtual void insert(Key key) {
         if (!linkedList->contains(key)) linkedList->addFirst(key);

@@ -4,6 +4,7 @@
 
 #ifndef ALG_SEQMAP_H
 #define ALG_SEQMAP_H
+
 template<typename Key, typename Value>
 class SeqMap : Map<Key, Value> {
 private:
@@ -13,11 +14,17 @@ public:
         sst = new SequenceST<Key, Value>();
     }
 
+    ~SeqMap() {
+        if (sst) {
+            delete sst;
+        }
+    }
+
     void insert(Key key, Value value) override {
         sst->insert(key, value);
     }
 
-    Value* remove(Key key) override {
+    Value *remove(Key key) override {
         return sst->remove(key);
     }
 
@@ -25,7 +32,7 @@ public:
         return sst->contain(key);
     }
 
-    Value* search(Key key) override {
+    Value *search(Key key) override {
         return sst->search(key);
     }
 

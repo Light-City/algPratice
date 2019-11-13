@@ -31,6 +31,10 @@ public:
         this->total = capacity + 1;
     }
 
+    ~loopQueue() {
+        delete []data;
+    }
+
     T getCapacity() {
         return capacity;
     }

@@ -17,7 +17,9 @@ public:
     LinkedListStack() {
         linkedList = new LinkedList<T>();
     }
-
+    ~LinkedListStack() {
+        delete linkedList;
+    }
     int getSize() {
         return linkedList->getSize();
     }

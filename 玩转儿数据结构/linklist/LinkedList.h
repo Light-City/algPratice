@@ -37,6 +37,15 @@ public:
         size = 0;
     }
 
+    ~LinkedList() {
+        Node *cur = dummyHead;
+        while (cur) {
+            delete cur;
+            size--;
+            cur = cur->next;
+        }
+    }
+
     int getSize() {
         return size;
     }

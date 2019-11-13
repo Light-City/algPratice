@@ -48,6 +48,9 @@ public:
     }
 
     ~Array() {
+        delete[]data;
+        size=0;
+        capacity=0;
         cout << "deconstruct\n";
     }
 
@@ -136,6 +139,7 @@ public:
     T removeLast() {
         return remove(size - 1);
     }
+
     // O(n)
     void removeElement(T e) {
         int index = find(e);
@@ -143,10 +147,12 @@ public:
             remove(index);
         }
     }
+
     // O(1)
     T getFirst() {
         return get(0);
     }
+
     // O(1)
     T getLast() {
         return get(size - 1);

@@ -4,13 +4,19 @@
 
 #ifndef ALG_SEQSET_H
 #define ALG_SEQSET_H
+
 template<typename Key>
-class SeqSet: Set<Key> {
+class SeqSet : Set<Key> {
 private:
     SequenceST<Key, Key> *sst;
 public:
     SeqSet() {
-        sst= new SequenceST<Key, Key>();
+        sst = new SequenceST<Key, Key>();
+    }
+
+    ~SeqSet() {
+        if (sst)
+            delete sst;
     }
 
     void insert(Key key) override {
