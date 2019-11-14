@@ -16,9 +16,9 @@
 
 ## 0.开发环境
 
-开发环境Ubuntu18.04+Clion
+开发环境**Ubuntu18.04+Clion**
 
-如何运行你的程序?
+> 如何运行你的程序?
 
 添加cpp文件到CmakeLists.txt中，示例：
 
