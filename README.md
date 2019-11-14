@@ -2,9 +2,17 @@
 
 本仓库学习自波波老师的慕课网课程《玩转儿数据结构》，由于官方为JAVA版本，但是本人用的C++，因此将自己的C++笔记放到下面。
 
-课程链接：https://coding.imooc.com/class/207.html
+课程链接：
+
+> https://coding.imooc.com/class/207.html
 
 后面将更新波波老师的其他课程学习笔记。
+
+编写的程序采用C++，如果觉得自己C++需要提高，可以看我的另一个仓库：《C++那些事》。
+
+> https://github.com/Light-City/CPlusPlusThings
+
+内容包括了基础与进阶，等等！
 
 ## 0.开发环境
 
